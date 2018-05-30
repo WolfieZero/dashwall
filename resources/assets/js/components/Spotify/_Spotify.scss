@@ -1,0 +1,49 @@
+.spotify {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    position: relative;
+
+    &::after,
+    &__background {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: -2em;
+    }
+
+    &::after {
+        background-color: rgba(#000, .75);
+    }
+
+    &__background {
+        background-position: center;
+        filter: blur(.5em);
+    }
+
+    &__content {
+        text-align: center;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+
+    &__artist,
+    &__name {
+        display: block;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-weight: 100;
+        text-shadow: 0 0 1px rgba(#000, .5);
+    }
+
+    &__artist {
+        font-size: 2em;
+    }
+
+    &__name {
+        font-size: 3em;
+    }
+}

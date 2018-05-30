@@ -1,0 +1,16 @@
+@import 'minireset.css/minireset.sass';
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+@import 'Wall/Wall';
+@import 'Image/Image';
+@import 'Spotify/Spotify';
+@import 'YouTube/YouTube';
+

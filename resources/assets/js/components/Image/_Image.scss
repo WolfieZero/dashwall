@@ -1,0 +1,11 @@
+.image {
+    $spacing: 1em;
+    position: absolute;
+    top: $spacing;
+    left: $spacing;
+    right: $spacing;
+    bottom: $spacing;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

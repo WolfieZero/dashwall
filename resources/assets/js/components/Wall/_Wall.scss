@@ -1,0 +1,36 @@
+.wall {
+    $space: 1%;
+    // background-image: url('/images/wall.png');
+    background-size: conver;
+    color: #fff;
+    display: grid;
+    grid-gap: $space;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    padding: $space;
+
+    &::after {
+        // background-color: #1A1F25;
+        background-color: rgba(#000, .75);
+        content: '';
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+    }
+}
+
+.brick {
+    background-color: #232730;
+    border-radius: .5em;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+
+    &--no-style {
+        background-color: transparent
+    }
+}
